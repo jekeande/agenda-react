@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import Contact from "./contact";
 
 export default function ListContact() {
 
@@ -21,21 +22,11 @@ export default function ListContact() {
     return (
         <div className="ListContact">
             {
-                state.map((contatos) => (
-                    <div className="Contact">
-                        <fieldset>
-                            <div>
-                                <legend><h2>{contatos.nome}</h2></legend>
-                                <p>E-mail:{contatos.email}</p>
-                                <p>Telefone:{contatos.telefone}</p>
-                            </div>
-                            <div>
-                                <button>Editar</button>
-                                <button>Eliminar</button>
-                            </div>
-                            
-                        </fieldset>
-                    </div>
+                state.map((contatos, index) => (
+                    <Contact 
+                    key={index}
+                        contatos={contatos}
+                    />
                 ))
             }
         </div>
