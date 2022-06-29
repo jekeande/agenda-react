@@ -12,12 +12,13 @@ export default function ListContact() {
     }
 
     const [state, setState] = useState([])
+    const [updateList, setUpdateList] = useState (false)
 
     useEffect(() => {
         getData().then((response) => {
         setState(response.data);
         })
-    }, [])
+    }, [updateList])
 
     return (
         <div className="ListContact">
@@ -26,6 +27,8 @@ export default function ListContact() {
                     <Contact 
                     key={index}
                         contatos={contatos}
+                        setUpdateList = {setUpdateList}
+                        updateList = {updateList}
                     />
                 ))
             }
