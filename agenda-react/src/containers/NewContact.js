@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 import axios from 'axios';
 
 export default function NewContact() {
@@ -17,8 +18,6 @@ export default function NewContact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await axios.post(URL,data);
-    console.log(response)
-
   }
 
   return (
