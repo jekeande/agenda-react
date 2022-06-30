@@ -1,10 +1,9 @@
 import React from "react";
 import axios from "axios";
 import './ListContact.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Contact({contatos, setUpdateList, updateList}) {
-
 
     const URL = "http://localhost:3004/contatos"
 
