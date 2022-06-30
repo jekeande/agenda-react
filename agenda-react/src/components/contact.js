@@ -1,18 +1,19 @@
 import React from "react";
 import axios from "axios";
-import ListContact from "./ListContact";
+import './ListContact.css';
 
 export default function Contact({contatos, setUpdateList, updateList}) {
 
     const URL = "http://localhost:3004/contatos"
 
     const handleDelete = async () => {
-        const response = await axios.delete(`${URL}/${contatos.id}`);
-        ListContact()
+        await axios.delete(`${URL}/${contatos.id}`);
+        setUpdateList(!updateList)
     }
 
     const handleEdit = () => {
-        console.log(`editando`)
+        axios.put(`${URL}/${contatos.id}`);
+        setUpdateList(!updateList)
     }
 
     return (
@@ -24,8 +25,8 @@ export default function Contact({contatos, setUpdateList, updateList}) {
                     <p>E-mail:{contatos.email}</p>
                 </div>
                 <div>
-                    <button onClick={handleEdit}>Editar</button>
-                    <button onClick={handleDelete}>Eliminar</button>
+                    <button className="edit" onClick={handleEdit}>Editar</button>
+                    <button className="dele" onClick={handleDelete}>Eliminar</button>
                 </div>       
             </fieldset>
         </div>

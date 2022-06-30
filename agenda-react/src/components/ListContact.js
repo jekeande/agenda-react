@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Contact from "./contact";
+import './ListContact.css';
 
 export default function ListContact() {
 
@@ -22,16 +23,17 @@ export default function ListContact() {
 
     return (
         <div className="ListContact">
-            {
-                state.map((contatos, index) => (
-                    <Contact 
-                    key={index}
-                        contatos={contatos}
-                        setUpdateList = {setUpdateList}
-                        updateList = {updateList}
-                    />
-                ))
-            }
+                {
+                    state.map((contatos, index) => (
+                        <Contact 
+                        key={index}
+                            contatos={contatos}
+                            setUpdateList = {setUpdateList}
+                            updateList = {updateList}
+                        />
+                    ))
+                }
         </div>
+        
     );
 }

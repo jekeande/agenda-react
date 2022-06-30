@@ -1,0 +1,21 @@
+* {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.Menu{
+    display: flex;
+    justify-content: center;
+    background-color:#D6EAF8;
+    
+}
+.Menu h2{
+    margin: 20px;
+    color: white;
+}
+.divi{
+    width: 5px;
+    background-color:#551a8b;
+    height: 50px;
+    margin: 10px;
+}
