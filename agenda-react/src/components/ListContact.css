@@ -6,12 +6,13 @@
 }
 
 .Contact{
-    margin: 30px;
+    margin: 0 0 0 30px;
     color: black;
 }
 
 fieldset{
-    color: black;
+    color: black;    
+    background-color: #F8F9F9;
 }
 .edit{
     background-color:#2E86C1;

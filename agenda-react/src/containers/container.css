@@ -5,7 +5,7 @@
 
 .salvar{
     background-color:#551a8b;
-    margin-left: 50%;
+    margin-left: 60%;
 }
 
 button{
@@ -28,8 +28,12 @@ h1{
     display: flex;
     justify-content: center;
     background-color:#551a8b;
-    padding: 10px;
-    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.agr{
+    margin-top: 0;
 }
 .container{
     display: flex;
@@ -39,9 +43,11 @@ h1{
 
 form{
     font-size: 20px;
-    margin: 20px;
+    margin-left: 80px;
 }
 .NewContact{
-    background-color: #D6EAF8 ;
+    width: 400px;
+    height: 300px;
+    background-color: #EAECEE;
     margin: 20px;
 }

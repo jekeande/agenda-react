@@ -23,7 +23,7 @@ export default function NewContact() {
   return (
     <div className="container">
       <div className="NewContact">
-        <h1>Agregar contacto</h1>
+        <h1 className="agr">Salvar novo contato</h1>
             <form onSubmit={handleSubmit}>
               <label><h3>Nome:
                   <input
