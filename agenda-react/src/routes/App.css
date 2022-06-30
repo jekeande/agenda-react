@@ -9,13 +9,35 @@
     background-color:#EAECEE;
     
 }
-.Menu h2{
-    margin: 20px;
-    color: white;
-}
+
 .divi{
     width: 5px;
     background-color:#551a8b;
-    height: 50px;
+    height: 70px;
     margin: 10px;
+}
+
+.buttonContatos,
+.buttonNovo{
+    border: none;
+    color: #551a8b;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+input{
+    margin-left: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+form{
+    font-size: 20px;
+    margin-left: 40px;
 }

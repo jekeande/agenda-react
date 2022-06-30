@@ -1,18 +1,15 @@
 import React from "react";
 import axios from "axios";
 import './ListContact.css';
+import { Link } from 'react-router-dom'
 
 export default function Contact({contatos, setUpdateList, updateList}) {
+
 
     const URL = "http://localhost:3004/contatos"
 
     const handleDelete = async () => {
         await axios.delete(`${URL}/${contatos.id}`);
-        setUpdateList(!updateList)
-    }
-
-    const handleEdit = () => {
-        axios.put(`${URL}/${contatos.id}`);
         setUpdateList(!updateList)
     }
 
@@ -25,7 +22,9 @@ export default function Contact({contatos, setUpdateList, updateList}) {
                     <p>E-mail:{contatos.email}</p>
                 </div>
                 <div>
-                    <button className="edit" onClick={handleEdit}>Editar</button>
+                    <Link to={{pathname:`/edit/${contatos.id}`}}>
+                        <button className="edit">Editar</button>
+                    </Link>
                     <button className="dele" onClick={handleDelete}>Eliminar</button>
                 </div>       
             </fieldset>

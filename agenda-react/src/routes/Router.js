@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Contatos from '../containers/contatos';
 import NewContact from '../containers/NewContact';
+import EditContact from '../containers/EditContact'
 import './App.css';
 
 export default function Router() {
@@ -14,13 +15,14 @@ export default function Router() {
      <div className="App">
         <BrowserRouter>
               <div className="Menu">
-                <h2><Link to="/">Contatos</Link></h2>
+                <Link to="/"><button className="buttonContatos">Contatos</button></Link>
                 <div className="divi"></div>
-                <h2><Link to="/new">Novo contato</Link></h2>
+                <Link to="/new"><button className="buttonNovo">Novo contato</button></Link>
               </div>
           <Routes>
               <Route exact path="/" element={<Contatos />} />
               <Route exact path="/new" element={<NewContact />} />
+              <Route exact path="/edit/:id" element={<EditContact />} />
           </Routes>
       </BrowserRouter>
      </div>

@@ -26,7 +26,7 @@ export default function ListContact() {
                 {
                     state.map((contatos, index) => (
                         <Contact 
-                        key={index}
+                            key={index}
                             contatos={contatos}
                             setUpdateList = {setUpdateList}
                             updateList = {updateList}
