@@ -8,7 +8,7 @@ import {
 import Contatos from '../containers/contatos';
 import NewContact from '../containers/NovoContato';
 import EditContact from '../containers/EditarContatos'
-import '../Assets/App.css';
+import '../Assets/Router.css';
 
 export default function Router() {
   return (
