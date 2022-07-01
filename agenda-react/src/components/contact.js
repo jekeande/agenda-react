@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import './Contact.css';
+import '../Assets/Contact.css';
 import { Link } from 'react-router-dom';
 
 export default function Contact({contatos, setUpdateList, updateList}) {
