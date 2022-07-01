@@ -1,5 +1,5 @@
 import React from "react";
-import './container.css';
+import './Contact.css';
 
 export default function EditContact() {
 

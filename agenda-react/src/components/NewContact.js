@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import './container.css';
+import './Contact.css';
 
 export default function NewContact() {
 

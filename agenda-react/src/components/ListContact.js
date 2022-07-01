@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Contact from "./contact";
-import './ListContact.css';
+import './Contact.css';
 
 export default function ListContact() {
 

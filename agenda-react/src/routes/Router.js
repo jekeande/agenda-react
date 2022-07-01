@@ -6,8 +6,8 @@ import {
   Link
 } from "react-router-dom";
 import Contatos from '../containers/contatos';
-import NewContact from '../containers/NewContact';
-import EditContact from '../containers/EditContact'
+import NewContact from '../containers/NovoContato';
+import EditContact from '../containers/EditarContatos'
 import './App.css';
 
 export default function Router() {
