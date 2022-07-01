@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import '../Assets/Contact.css';
+//import axios from 'axios';
 
-export default function EditContact() {
+export default function EditContact({contatos}) {
+
+  const [setData] = useState()
+
+  const handleChange = (event) => {
+    setData({
+      [event.target.name]: event.target.value
+    })
+  }
 
   return (
               <div className="container">
@@ -13,6 +22,8 @@ export default function EditContact() {
                             type="text"
                             name="nome"
                             placeholder="Nome"
+                            value={contatos.nome}
+                            onChange={handleChange}
                             required
                           /></h3>
                       </label>
@@ -21,6 +32,8 @@ export default function EditContact() {
                             type="text"
                             name="telefone"
                             placeholder="Telefone"
+                            value={contatos.telefone}                            
+                            onChange={handleChange}
                             required
                           /></h3>
                       </label>
@@ -29,6 +42,8 @@ export default function EditContact() {
                             type="text"
                             name="email"
                             placeholder="E-Mail"
+                            value={contatos.email}
+                            onChange={handleChange}
                             required
                           /></h3>
                       </label>

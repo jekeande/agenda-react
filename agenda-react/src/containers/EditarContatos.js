@@ -1,10 +1,11 @@
 import React from "react";
-import EditContact from "../components/EditContact";
+import ContatosEdit from "../components/ContatosEdit";
 
 export default function EditarContatos() {
+
   return (
     <div>
-       <EditContact />
+       <ContatosEdit/>
     </div>
   );
 }

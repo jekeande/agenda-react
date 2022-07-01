@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../Assets/Contact.css';
 
 export default function NewContact() {
+
+  const Navigate = useNavigate();
 
   const [data, setData] = useState ({id: null, nome: "", telefone: "", email: ""})
 
@@ -18,6 +21,7 @@ export default function NewContact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     await axios.post(URL,data);
+    Navigate('/');
   }
 
   return (
