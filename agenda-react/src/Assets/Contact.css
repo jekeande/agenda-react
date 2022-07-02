@@ -13,7 +13,6 @@
 fieldset{
     border-color: black;  
     background-color: #F8F9F9;
-    border: 9px groove (internal value);
     border-radius: 10px;
 }
 
