@@ -18,8 +18,10 @@ export default function Contact({contatos, setUpdateList, updateList}) {
             <fieldset>
                     <legend><h2>{contatos.nome}</h2></legend>
                 <div>
-                    <p><b>Telefone:  </b>{contatos.telefone}</p>
-                    <p><b>E-mail:  </b>{contatos.email}</p>
+                    <ol>
+                        <li><b>Telefone:  </b>{contatos.telefone}</li>
+                        <li><b>E-mail:  </b>{contatos.email}</li>
+                    </ol>
                 </div>
                 <div>
                     <Link to={{pathname:`/edit/${contatos.id}`}}>
