@@ -3,6 +3,7 @@ import axios from "axios";
 import '../Assets/Contact.css';
 import { Link } from 'react-router-dom';
 
+
 export default function Contact({contatos, setUpdateList, updateList}) {
 
     const URL = "http://localhost:3004/contatos"

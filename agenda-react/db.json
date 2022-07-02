@@ -1,18 +1,6 @@
 {
   "contatos": [
     {
-      "id": 36,
-      "nome": "Jennifer",
-      "telefone": "11111-11111",
-      "email": "jekeande@gmail.com"
-    },
-    {
-      "id": 38,
-      "nome": "Jonathan",
-      "telefone": "3333-3333",
-      "email": "jekeande@gmail.com"
-    },
-    {
       "id": 41,
       "nome": "Joannys",
       "telefone": "2222-2222",
@@ -20,8 +8,8 @@
     },
     {
       "id": 42,
-      "nome": "Graciela",
-      "telefone": "5555-5555",
+      "nome": "Jennifer",
+      "telefone": "111111-11111",
       "email": "jekeande@gmail.com"
     },
     {
@@ -35,30 +23,6 @@
       "nome": "Isaac",
       "telefone": "2222-2222",
       "email": "jekeande@gmail.com"
-    },
-    {
-      "id": 46,
-      "nome": "Natacha",
-      "telefone": "8888-8888",
-      "email": "jekeande@gmail.com"
-    },
-    {
-      "id": 47,
-      "nome": "Jennifer",
-      "telefone": "222222",
-      "email": "dadasd"
-    },
-    {
-      "id": 48,
-      "nome": "dfgdg",
-      "telefone": "fgdfgdfg",
-      "email": "fgdfg"
-    },
-    {
-      "id": 49,
-      "nome": "ghfgh",
-      "telefone": "ghfgh",
-      "email": "ghfgh"
     }
   ]
 }

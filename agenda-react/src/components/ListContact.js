@@ -18,7 +18,7 @@ export default function ListContact() {
         getData().then((response) => {
         setState(response.data);
         })
-    }, [])
+    }, [updateList])
 
     return (
 
