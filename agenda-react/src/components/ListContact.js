@@ -18,9 +18,10 @@ export default function ListContact() {
         getData().then((response) => {
         setState(response.data);
         })
-    }, [updateList])
+    }, [])
 
     return (
+
         <div className="ListContact">
                 {
                     state.map((contatos, index) => (
