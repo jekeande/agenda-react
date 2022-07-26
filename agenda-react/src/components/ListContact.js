@@ -28,7 +28,9 @@ export default function ListContact() {
 
     return (
         <div>
-            <input type="text" placeholder='Buscar Contato' value={search} onChange={searcher} className='buscar'/>
+            <div className="busca">
+                <input type="text" placeholder='Buscar Contato' value={search} onChange={searcher} className='buscar'/>
+            </div>
 
             <div className="ListContact">
                     {
